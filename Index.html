@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <div class="container">
+        <input type="text" class="display" id="display" disabled>
+        <div class="buttons">
+            <button class="btn-clear" onclick="clearDisplay()">C</button>
+
+            <button class="btn-delete" onclick="deleteLastNumber()">&#9003;</button>
+
+            <button onclick="appenfvalue(',')">,</button>
+            <button onclick="appenfvalue('0')">0</button>
+            <button class="operator" onclick="appenfvalue('+')">+</button>
+
+            <button onclick="appenfvalue('1')">1</button>
+            <button onclick="appenfvalue('2')">2</button>
+            <button onclick="appenfvalue('3')">3</button>
+            <button class="operator" onclick="appenfvalue('-')">-</button>
+
+            <button onclick="appenfvalue('4')">4</button>
+            <button onclick="appenfvalue('5')">5</button>
+            <button onclick="appenfvalue('6')">6</button>
+            <button class="operator" onclick="appenfvalue('*')">X</button>
+
+            <button onclick="appenfvalue('7')">7</button>
+            <button onclick="appenfvalue('8')">8</button>
+            <button onclick="appenfvalue('9')">9</button>
+            <button class="operator" onclick="appenfvalue('/')">/</button>
+
+            <button onclick="appenfvalue('.')">.</button>
+            <button class="btn-equal" onclick="calculate()">=</button>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

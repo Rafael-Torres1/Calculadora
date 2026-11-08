@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(
+        to bottom,
+        #071039 0%,
+        #0F2270 100%
+    );
+
+    font-family: sans-serif;
+}
+
+.container{
+    background-color: #161E2F;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0px 8px 5px rgba(0, 0, 0, 0.3);
+    width: 330px;
+}
+
+.display{
+    width: 100%;
+    height: 60px;
+    margin-bottom: 20px;
+    text-align: right;
+    padding: 15px;
+    font-size: 1.8rem;
+    border: none;
+    border-radius: 12px;
+    background: #384358;
+    color: #CCD0CF;
+}
+
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+}
+
+button{
+    padding: 26px;
+    font-size: 1.3rem;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    background: #384358;
+    color: white;
+    font-weight: bolder;
+    
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+button:hover{
+    background-color: #434f67;
+    transform: translateY(-2px);
+    transition: all 0.2s ease-in-out;
+}
+
+button:active{
+    transform: scale(0.95);
+}
+
+.operator{
+    background-color: #DC586D;
+}
+
+.operator:hover{
+    background-color: #ef6078;
+}
+
+.btn-delete {
+  font-size: 0.85rem; /* Ajusta se necessário para bater com o tamanho visual do "C" */
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-clear{
+    background-color: rgb(240, 47, 47);
+}
+
+.btn-clear:hover{
+    background-color: rgb(255, 94, 94);
+}
+
+.btn-equal{
+    background-color: #27ae60;
+    grid-column: span 2;
+}
+
+.btn-equal:hover{
+    background-color: #1d9b52;
+}
